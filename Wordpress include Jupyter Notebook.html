@@ -1,0 +1,21 @@
+<script type="application/javascript">
+
+function resizeIFrameToFitContent( iFrame ) {
+
+   iFrame.height = iFrame.contentWindow.document.body.scrollHeight + 80;
+}
+
+window.addEventListener("load", function(){
+
+
+    var iFrame = document.getElementById( 'Jupyter-Mainframe' );
+    resizeIFrameToFitContent( iFrame );
+
+
+    
+} );
+
+</script>
+
+<iframe src="replace with link from wp-uploads" id="Jupyter-Mainframe" scrolling="yes" width="100%">
+</iframe>
